@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper bg-blue-950 w-screen h-screen flex items-center justify-center">
+        <div class="flex bg-slate-400 rounded-md flex-col items-center border h-auto w-[50%] shadow-md">
+            <p class="text-4xl mt-10 font-serif font-[500]">Weather App</p>
+            <div class="flex justify-between w-full mt-10 mb-0">
+                <form class="flex justify-between w-full mt-10 mb-10">
+                    <input type="text" id="inputField" placeholder="Enter City Name" class="shadow-sm ml-[8%] text-2xl placeholder:italic placeholder:place-items-center" >
+                    <input class=" get-weather-button bg-blue-500 mr-[8%] text-white rounded-md hover:bg-blue-700 w-32 h-12 font-semibold" type="submit" value="Get Weather"/>
+                </form>
+            </div>
+
+            <!-- Dynamic updation -->
+            <div id="weather-data" class="weather-data flex flex-col w-full h-full items-center ">
+                <div class="mt-0 w-auto icon image">
+                    <!-- Img -->
+                </div>
+                <div class="font-bold text-3xl temperature">
+                    <!-- temp -->
+                </div>
+                <div class="description text-xl mb-2 font-semibold">
+                    <!-- info -->
+                </div>
+                <div class="details-end w-full h-full flex justify-center mb-10 gap-[3%]">
+                    <!-- <div class="w-[30%] h-[70px] flex justify-center items-center text-lg bg-slate-300 rounded-sm"> Feels like: 23°C</div>
+                    <div class="w-[30%] h-[70px] flex justify-center items-center text-lg bg-slate-300 rounded-sm"> Humidity: 40%</div>
+                    <div class="w-[30%] h-[70px] flex justify-center items-center text-lg bg-slate-300 rounded-sm"> Wind speed: 5 m/s</div> -->
+                </div>
+            </div>
+            <div class="hidden mb-10 text-xl">No Data Found</div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
